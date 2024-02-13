@@ -4,7 +4,14 @@ public class User {
 
 	private User userType;
 	private String userName;
+	private static String firstName;
 	
+	public static String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 	public User getUserType() {
 		return userType;
 	}

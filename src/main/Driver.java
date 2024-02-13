@@ -4,7 +4,10 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
-		MainMenu.startMainMenu();
+		MainMenu menu = new MainMenu();
+		
+		menu.startMainMenu();
+		
 	}
 
 }
