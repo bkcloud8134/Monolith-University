@@ -13,11 +13,6 @@ public class MainMenu {
 		this.mainMenu = mainMenu;
 	}
 	
-	public MainMenu(MainMenu mainMenu) {
-		super();
-		this.mainMenu = mainMenu;
-	}
-	
 	/*
 	 * The main menu to the application. 
 	 * 	Starts off with greeting, then prompts user to log in, or register if new user.
@@ -75,7 +70,8 @@ public class MainMenu {
 	}
 	
 	public void studentMenu(User user) {
-		System.out.println("Welcome to the Student Portal " + User.getFirstName() + " what would you like to do?" );
+//		System.out.println("Welcome to the Student Portal " + User.getFirstName() + " what would you like to do?" );
+		System.out.println("Welcome to the Student Portal, what would you like to do?" );
 		System.out.println("1)View classes" + "\n" + "2)Register for classes" + "\n" +
 		"3)withdraw from classes" + "\n" + "Request transcript");
 	}
