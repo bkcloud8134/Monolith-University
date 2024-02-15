@@ -1,8 +1,25 @@
 package model;
 
+import java.util.ArrayList;
+
 import model.University.schools;
 
-public class Courses {
+public class Course {
+
+	private String courseName;
+	private int creditHours;
+	schools school;
+	Course course;
+
+	ArrayList<String> courses = new ArrayList<String>();
+
+	public String getCourseName() {
+		return courseName;
+	}
+
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
 
 	private String name;
 	private String courseCode;
@@ -11,14 +28,14 @@ public class Courses {
 		return name;
 	}
 
-	public Courses(String name, String courseCode, int creditHours) {
+	public Course(String name, String courseCode, int creditHours) {
 		super();
 		this.name = name;
 		this.courseCode = courseCode;
 		this.creditHours = creditHours;
 	}
 
-	public Courses(String name, String courseCode, int creditHours, schools school) {
+	public Course(String name, String courseCode, int creditHours, schools school) {
 		super();
 		this.name = name;
 		this.courseCode = courseCode;
@@ -26,7 +43,7 @@ public class Courses {
 		this.school = school;
 	}
 
-	public Courses(String name, String courseCode, int creditHours, schools school, Courses courses) {
+	public Course(String name, String courseCode, int creditHours, schools school, Course course) {
 		super();
 		this.name = name;
 		this.courseCode = courseCode;
@@ -55,16 +72,12 @@ public class Courses {
 		this.creditHours = creditHours;
 	}
 
-	public Courses getCourses() {
-		return courses;
+	public Course getCourse() {
+		return course;
 	}
 
-	public void setCourses(Courses courses) {
-		this.courses = courses;
+	public void setCourse(Course course) {
+		this.course = course;
 	}
-
-	private int creditHours;
-	schools school;
-	Courses courses;
 
 }

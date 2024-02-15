@@ -2,25 +2,16 @@ package model;
 
 import java.util.ArrayList;
 
-public class Student  {
+public class Student {
 
-	String firstName;
-	String lastName;
-	String major;
-	int year;
-	String email;
+	private String firstName;
+	private String lastName;
+	private String major;
+	private int year;
+	private String email;
 	User user;
 
 	ArrayList<String> students = new ArrayList<String>();
-
-	public ArrayList<String> viewClasses() {
-		return students;
-		
-	}
-//
-//	public abstract ArrayList<String> registerClass();
-//
-//	public abstract ArrayList<String> withdrawClass();
 
 	public User getUser() {
 		return user;
@@ -70,12 +61,5 @@ public class Student  {
 		this.email = email;
 	}
 
-	public ArrayList<String> getStudents() {
-		return students;
-	}
-
-	public void setStudents(ArrayList<String> students) {
-		this.students = students;
-	}
 
 }
